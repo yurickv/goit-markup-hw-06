@@ -591,3 +591,12 @@ display: block;}
     height: 100%;
     
 }
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+}
+.modal-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
