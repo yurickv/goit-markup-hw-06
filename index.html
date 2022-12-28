@@ -379,10 +379,15 @@
                     <textarea class="modal-input" name="Comment" id="Comment" cols="30" rows="10" placeholder="Text input"></textarea>
                 </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" name="policy" id="policy"/>
-                    <label class="modal-checkbox" for="policy">I accept the terms and conditions of the  <a href=""> Privacy Policy </a> </label>
-                </div>
+                <label class="checkbox">
+                    <input  type="checkbox" name="policy" class="visually-hidden check-input"/>
+                    <span class="check-icon">
+                        <svg>
+                            <use href="./images/icons.svg#check-input"></use>
+                        </svg>
+                    </span>
+                    <span class="modal-checkbox">I accept the terms and conditions of the  <a href=""> Privacy Policy </a> </span>
+                </label>
                 
                 <button class="sec-hero-button modal-button" type="submit">Send</button>
                 
