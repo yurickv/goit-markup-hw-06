@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -327,17 +327,17 @@
                 </ul>  
             </div>
             <div class="footer-subscribe-div">
-                <label for="footer-Email" class="footer-label">Subscribe</label>
-                <div class="footer-button-div">
+                <p class="footer-label">Subscribe</p>
+                <form class="footer-button-div">
                     <input class="footer-input" type="email" name="footer-Email" id="footer-Email" placeholder="E-mail"/>
                     <button class="sec-hero-button footer-button" type="submit">Subscribe
                         <svg  class="footer-svg">
                             <use href="./images/icons.svg#subscribe-button" ></use>
                         </svg>
                     </button>
-                    
-                </div>
+                </form>    
             </div>
+        </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -346,13 +346,12 @@
                     <use href="./images/icons.svg#close-button"></use>
                 </svg>
             </button>
-
-            <form class="modal-form" action="">
-                <h2 class="modal-text">Leave your contacts and we will call you back</h2>
+            <h3 class="modal-text">Leave your contacts and we will call you back</h3>
+            <form class="modal-form">
 
                 <div class="input-div">
                     <label for="name" class="modal-label">Name</label>
-                    <input class="modal-input" type="text" name="name" id="name" autofocus />
+                    <input class="modal-input" type="text" name="name" id="name" autofocus/>
                     <svg  class="input-svg">
                         <use href="./images/icons.svg#input-name" ></use>
                     </svg>
