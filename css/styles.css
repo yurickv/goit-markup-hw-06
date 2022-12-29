@@ -701,10 +701,13 @@ display: block;}
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.input-div:hover .modal-input, .input-div:focus .modal-input, .input-div:active .modal-input, .input-div:checked .modal-input {
+.modal-input:focus, .modal-input:active, .modal-input:focus-visible{
+    border: 1px solid var(--brand-color);
+}
+.input-div:hover .modal-input, .input-div:focus .modal-input, .input-div:active .modal-input, .input-div:focus-visible .modal-input {
     border: 1px solid var(--brand-color);       
 }
-.input-div:hover, .input-div:focus, .input-div:active, .modal-input:checked  {
+.input-div:hover, .input-div:focus, .input-div:active, .modal-input:focus-visible  {
     color: var(--brand-color);
 }
 
