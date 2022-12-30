@@ -443,6 +443,7 @@ align-items: baseline;}
     height: 40px;
     min-width: 264px;
     padding: 8px 16px;
+    color: #FFFFFF;
 }
 .footer-input::placeholder {
     font-size: 12px;
@@ -463,10 +464,6 @@ align-items: baseline;}
     margin: 0px;
     height: 40px;
 }
-
-
-
-
 
 
 
@@ -612,7 +609,7 @@ display: block;}
        
 }
 .modal {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -674,57 +671,65 @@ display: block;}
 .modal-form {
     display: flex;
     flex-direction: column;
-    padding-top: 6px;
+    margin-top: 14px;
     position: relative;
     
 }
 .input-div {
-    margin-top: 8px;
-
+    
     display: flex;
     flex-direction: column;
     position: relative;
     color: #2E2F42;
-
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+}
+
+.input-div:not(:first-child) {
+    margin-top: 8px;
+}
+
+.input-div > div {
+    color: #2E2F42;
 }
 
 .modal-input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    color: #2E2F42;
+    /* color: tomato; */
     /* background-color: #31D0AA; */
     margin-top: 4px;
     padding: 8px 8px 8px 39px;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+     /* #2E2F42; */
 }
-.modal-input:focus, .modal-input:active, .modal-input:focus-visible{
+
+.modal-input:focus, .modal-input:hover, .modal-input:focus-visible {
     border: 1px solid var(--brand-color);
     outline: none;
+    
 }
-.modal-input:focus .input-svg {
-    color: var(--brand-color);
+
+.modal-input:focus + div {
+    color:var(--brand-color);
 }
-.input-div:hover .modal-input, .input-div:focus .modal-input, .input-div:active .modal-input, .input-div:focus-visible .modal-input {
+
+.input-div:focus .modal-input, .input-div:hover .modal-input,  .input-div:active .modal-input, .input-div:focus-visible .modal-input {
     border: 1px solid var(--brand-color); 
     outline: none;
 }
-.input-div:hover .input-svg, .input-div:focus .input-svg, .input-div:active .input-svg, .modal-input:focus-visible .input-svg {
+
+.input-div:hover .input-svg,  .input-div:focus .input-svg,  .input-div:active .input-svg, .modal-input:focus-visible  .input-svg {
     color: var(--brand-color);
     outline: none;
 }
-
-
 
 .input-svg{
     position: absolute;
     top: 30px;
     left: 18px;
     
-    fill: currentColor;;
+    fill: currentColor;
     
     width: 15px;
     height: 13px;
@@ -790,10 +795,10 @@ textarea::placeholder {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
+
 .check-icon > svg { 
-    
     width: 10px;
-    height: 11px;
+    height: 12px;
 }
 
 .modal-checkbox {
@@ -802,6 +807,7 @@ textarea::placeholder {
     letter-spacing: 0.04em;
     color: #757575;
 }
+
 .modal-checkbox > a {
     color: #404BBF;
 }
